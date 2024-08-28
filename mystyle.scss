@@ -4,6 +4,10 @@
 // The first two layers expose public variables with @forward so they can be overwritten in a skin
 
 // ## Settings
+@use "./010-settings/" as s with (
+      $il-main-color: #a52d2d,
+      $il-standard-page-header-bg-color: #f6d9a1,
+);
 @forward "./010-settings/";
 
 // ## Dependencies
