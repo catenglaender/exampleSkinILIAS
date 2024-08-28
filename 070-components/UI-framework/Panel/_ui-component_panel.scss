@@ -14,17 +14,11 @@
 //Valid for all panels (if not overridden)
 .panel {
 	margin-bottom: $il-line-height-computed;
-	border: ls.$il-panel-border;
-	border-radius: ls.$il-panel-border-radius;
-	-webkit-box-shadow: ls.$il-panel-shadow;
-	box-shadow: ls.$il-panel-shadow;
 
 	.panel-heading {
-		padding: ls.$il-panel-heading-padding;
 		border-bottom: 1px solid transparent;
 		border: none;
-		@include border-top-radius((ls.$il-panel-border-radius - 1));
-	
+
 		>.dropdown .dropdown-toggle {
 			color: $il-btn-standard-color;
 		}
@@ -32,7 +26,6 @@
 
 	.panel-heading.ilHeader,
 	.panel-heading.ilBlockHeader {
-		background-color: $il-main-dark-bg;
 		margin: 0;
 		border: none;
 
@@ -71,17 +64,13 @@
 	}
 
 	.panel-body {
-		padding: $il-padding-xxxlarge-vertical $il-padding-xlarge-horizontal;
 		background-color: $il-main-bg;
 		@include clearfix;
 	}
 }
 
 .panel-footer {
-	padding: ls.$il-panel-footer-padding;
 	background-color: ls.$il-panel-footer-bg;
-	border-top: 1px solid ls.$il-panel-inner-border;
-	@include border-bottom-radius((ls.$il-panel-border-radius - 1));
 }
 
 //Special assignments for Panels using Flex layouts (Standard, Secondary, Report and Sub)
@@ -147,24 +136,16 @@
 
 	.panel-body {
 		.il-item-group{
-			margin: 0 (-$il-margin-xlarge-horizontal);
+			margin: 0;
 			h2{
-				padding: $il-padding-large-vertical $il-padding-xlarge-horizontal;
+				padding: $il-padding-large-vertical 0;
 			}
 			h3{
-				padding: $il-padding-large-vertical $il-padding-xlarge-horizontal;
-			}
-
-			&:first-child{
-				margin-top: -$il-margin-xxxlarge-vertical;
-			}
-
-			&:last-child{
-				margin-bottom: -$il-margin-xxxlarge-vertical;
+				padding: $il-padding-large-vertical 0;
 			}
 
 			.il-item{
-				padding-left: $il-padding-xlarge-horizontal;
+				padding-left: 0;
 
 				.media-right{
 					vertical-align: middle;
@@ -174,7 +155,6 @@
 	}
 
 	.il-panel-listing-std-container > h2, .panel-body h4{
-		display: block;
 		padding: $il-padding-base-vertical 0;
 		font-size: $il-font-size-base;
 		color: ls.$il-panel-heading-color;
@@ -192,7 +172,7 @@
 	-webkit-box-shadow: none;
 	box-shadow: none;
 
-	margin: (-$il-padding-xxxlarge-vertical) (-$il-margin-xlarge-horizontal);
+	margin: (-$il-padding-xxxlarge-vertical) 0;
 
 	.panel-body{
 		margin: 0;
@@ -221,7 +201,6 @@
 
 //Listing Panel
 .il-panel-listing-std-container {
-	background-color: $il-main-dark-bg;
 	margin-bottom: $il-standard-page-content-padding;
 
 	> h2 {

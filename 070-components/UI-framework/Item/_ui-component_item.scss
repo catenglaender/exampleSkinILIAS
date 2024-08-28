@@ -36,7 +36,7 @@ $il-item-gap-xs: 1px;
 		.btn-link, a {
 			font-size: inherit;
 			line-height: $il-line-height-base;
-			
+
 			&:focus-visible {
 				display: block;
 			}
@@ -116,8 +116,8 @@ $il-item-gap-xs: 1px;
 }
 
 .il-item-group {
+	background-color: transparent;
 	clear: both;
-	background-color: $il-main-dark-bg;
 
 	> h3 {
 		float:left;
