@@ -26,7 +26,8 @@ $il-item-gap-xs: 1px;
 }
 
 .il-item {
-	background-color: $il-main-bg;
+	border-left: 2px solid $il-main-color;
+	background-color: $il-main-dark-bg;
 	position: relative;
 	padding: $il-item-padding;
 
